@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fmtjson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pon task to format json files",
   "main": "lib",
   "browser": "shim/browser",
