@@ -1,6 +1,6 @@
 {
   "name": "pon-task-fmtjson",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Pon task to format json files",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,18 +23,17 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-fmtjson#readme",
   "dependencies": {
-    "co": "^4.6.0",
-    "fmtjson": "^3.0.7"
+    "fmtjson": "^4.0.0"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
     "ababel-es2015": "^2.0.1",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
@@ -43,7 +42,7 @@
     "sugos-travis": "^2.0.7"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "npm": ">=4"
   }
 }

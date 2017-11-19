@@ -6,31 +6,30 @@
 
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
-const { ok } = require('assert')
-const co = require('co')
+const {ok} = require('assert')
 
 describe('define', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Define', () => co(function * () {
-    let filename = require.resolve('../misc/mocks/mock-json-01.json')
-    let ctx = ponContext()
+  it('Define', async () => {
+    const filename = require.resolve('../misc/mocks/mock-json-01.json')
+    const ctx = ponContext()
 
-    let task = define(filename, {
+    const task = define(filename, {
       sort: true
     })
     ok(task)
 
-    yield Promise.resolve(task(ctx))
-  }))
+    await Promise.resolve(task(ctx))
+  })
 })
 
 /* global describe, before, after, it */
